@@ -13,7 +13,7 @@ class MiApp extends StatelessWidget {
       title: 'Conoce a Tamalameque',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 3, 211, 176)),
         useMaterial3: true,
       ),
       home: const TamalamequeHomePage(),
@@ -42,10 +42,16 @@ const List<SeccionInfo> _seccionesDetalle = [
     titulo: 'Ubicación y Geografía',
     icono: Icons.location_on,
     contenido:
-        'Tamalameque se encuentra ubicado al sur del departamento del Cesar,'
-        ' a orillas del majestuoso Río Magdalena en la subregión del Valle del Cesar.',
+        'Tamalameque se sitúa en el extremo sur del departamento del Cesar, en el plano continental del Caribe colombiano,'
+        ' formando parte integral de la subregión geográfica conocida como la Depresión Momposina y el Valle del Bajo Magdalena.'
+        ' Su territorio es de relieve predominantemente llano y cuenta con un ecosistema anfibio moldeado por el curso del río Magdalena y'
+        ' la extensa red de caños y ciénagas que alimentan el complejo cenagoso de Zapatosa. Limita geográficamente al norte con el municipio'
+        ' de Chimichagua, al este con Curumaní, Pelaya y Pailitas, al sur con Pelaya y el departamento de Santander,'
+        ' y al oeste con el río Magdalena, el cual sirve de frontera natural con los departamentos de Bolívar y Magdalena.'
+        ' Por su ubicación estratégica, registra un clima tropical cálido y húmedo, con temperaturas promedio que rondan los'
+        ' 30 °C a lo largo del año.',
       imagenUrl:
-      'https://agenciadenoticias.unal.edu.co/fileadmin/Agencia_de_Noticias/Imagenes/2025/10-octubre/322/AgenciaUNAL-271025_pm-01.jpg',
+      'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Colombia_-_Cesar_-_Tamalameque.svg/250px-Colombia_-_Cesar_-_Tamalameque.svg.png?utm_source=es.wikipedia.org&utm_campaign=parser&utm_content=thumbnail',
 ),
 
   SeccionInfo(
@@ -89,10 +95,15 @@ const List<SeccionInfo> _seccionesDetalle = [
     titulo: 'Su gente ',
     icono: Icons.people, 
     contenido:
-     'Tamalameque es un municipio ubicado en el departamento de Magdalena, en la costa caribeña de Colombia. Su población está compuesta por una rica mezcla de culturas, incluyendo afrodescendientes, indígenas y europeos. Esta diversidad se refleja en su lengua materna, que es el español con influencias del criollo y del kriol, así como en sus costumbres, música y gastronomía.',
-
-     contenido:
-     'La gente de Tamalameque es conocida por su hospitalidad y calidez.',
+     'La gente de Tamalameque encarna la esencia cálida y alegre del habitante ribereño y "anfibio" del Caribe colombiano,'
+     ' destacándose por su amabilidad, hospitalidad y trato cercano hacia propios y visitantes.'
+     ' Su identidad está profundamente ligada al río Magdalena y a las ciénagas, lo que ha forjado en ellos una sólida '
+     'tradición oral llena de historias, mitos y anécdotas compartidas con orgullo, entre las que sobresale la leyenda'
+     ' de La Llorona. Además, poseen un espíritu marcadamente melómano y fiestero, sintiendo un amor visceral por la'
+     ' tambora, los bailes cantados y el folclor tradicional que celebran comunitariamente en cada festividad.'
+     ' Esta convivencia constante con las dinámicas del agua, la pesca y las labores del campo ha moldeado a una '
+     'población resiliente, trabajadora y adaptativa, con un arraigo entrañable por su tierra y sus costumbres ancestrales.',
+     
     imagenUrl:
      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiBZxAwUN4BmJ1JgrEz2mogZYsc27cXyGLHQAsMpGaMTPQ0SUGu4GwLQv&s=10'
   ),
