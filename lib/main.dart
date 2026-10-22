@@ -69,10 +69,34 @@ const List<SeccionInfo> _seccionesDetalle = [
     titulo: 'Fiestas y Cultura',
     icono: Icons.celebration,
     contenido:
-        'Tamalameque es famoso por el Festival Nacional de la Tambora y la Guacherna en diciembre, además de las Fiestas Patronales en honor al Santo Cristo en septiembre.',
+        'Las festividades tradicionales de Tamalameque reflejan la profunda herencia afrodescendiente, '
+        'indígena y anfibia del Caribe colombiano, donde la fe, el folclor ribereño y los mitos populares se entrelazan a lo largo del año.'
+        ' Su celebración más representativa son las Fiestas Patronales en honor a San Miguel Arcángel a finales de septiembre,'
+        ' las cuales coinciden con la fecha de su fundación española y llenan las calles de procesiones religiosas,'
+        ' alboradas musicales, desfiles de bandas y bailes populares. En el plano cultural,'
+        ' el municipio cobra vida con el Festival Nacional de la Tambora y la Guacherna,'
+        ' el evento folclórico más importante de la localidad, donde agrupaciones de bailes cantados de la Depresión Momposina compiten y rinden homenaje a los ritmos ancestrales de la región.'
+        ' Paralelamente, la identidad local mantiene viva la recreación del mito de "La Llorona de Tamalameque", '
+        'inmortalizada en la célebre cumbia del maestro José Barros, que se escenifica mediante comparsas y dramatizaciones a orillas de la ciénaga'
+        ' y del río Magdalena. Toda esta riqueza festiva se complementa a comienzos de año con los tradicionales carnavales —marcados por lecturas del bando,'
+        ' comparsas y coronación de reinas— y con las parrandas decembrinas, donde las comunidades de la cabecera y'
+        ' sus corregimientos celebran al ritmo de tamboras y música vallenata.',
       imagenUrl: 
       'https://radionacional-v3.s3.amazonaws.com/s3fs-public/styles/rnal_16_9_1024/public/node/article/field_image/TamalamequeAlcald%C3%ADa1.jpg.webp?itok=XcgVZgZJ'
   ),
+
+  SeccionInfo(
+    titulo: 'Su gente ',
+    icono: Icons.people, 
+    contenido:
+     'Tamalameque es un municipio ubicado en el departamento de Magdalena, en la costa caribeña de Colombia. Su población está compuesta por una rica mezcla de culturas, incluyendo afrodescendientes, indígenas y europeos. Esta diversidad se refleja en su lengua materna, que es el español con influencias del criollo y del kriol, así como en sus costumbres, música y gastronomía.',
+
+     contenido:
+     'La gente de Tamalameque es conocida por su hospitalidad y calidez.',
+    imagenUrl:
+     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiBZxAwUN4BmJ1JgrEz2mogZYsc27cXyGLHQAsMpGaMTPQ0SUGu4GwLQv&s=10'
+  ),
+
 ];
 
 class TamalamequeHomePage extends StatelessWidget {
@@ -147,7 +171,7 @@ class TamalamequeHomePage extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(12),
                 child: Image.network(
-                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUmybGPOKKZ-CAYJ8F7B4NikG5cB5ViQq6OC6gGsWALaMYJu9pXskCDOA&s=10',
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxw95ei4ivrhoQkSyVBIl19uQ473gto4Y5nUvVVgVlsMTm3jNnjL-4rtF8&s=10',
                   fit: BoxFit.cover,
                   loadingBuilder: (context, child, progress) {
                     if (progress == null) return child;
