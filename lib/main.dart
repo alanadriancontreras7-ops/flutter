@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:proyectalan/intefaz.dart' show mostraradso;
+
 
 void main() {
   runApp(const MiApp());
@@ -13,7 +15,9 @@ class MiApp extends StatelessWidget {
       title: 'Conoce a Tamalameque',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 3, 211, 176)),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 3, 211, 176),
+        ),
         useMaterial3: true,
       ),
       home: const TamalamequeHomePage(),
@@ -44,16 +48,15 @@ const List<SeccionInfo> _seccionesDetalle = [
     contenido:
         'Tamalameque se sitúa en el extremo sur del departamento del Cesar, en el plano continental del Caribe colombiano,'
         ' formando parte integral de la subregión geográfica conocida como la Depresión Momposina y el Valle del Bajo Magdalena.'
-        ' Su territorio es de relieve predominantemente llano y cuenta con un ecosistema anfibio moldeado por el curso del río Magdalena y'
+        ' Su territorio es de relief predominantemente llano y cuenta con un ecosistema anfibio moldeado por el curso del río Magdalena y'
         ' la extensa red de caños y ciénagas que alimentan el complejo cenagoso de Zapatosa. Limita geográficamente al norte con el municipio'
         ' de Chimichagua, al este con Curumaní, Pelaya y Pailitas, al sur con Pelaya y el departamento de Santander,'
         ' y al oeste con el río Magdalena, el cual sirve de frontera natural con los departamentos de Bolívar y Magdalena.'
         ' Por su ubicación estratégica, registra un clima tropical cálido y húmedo, con temperaturas promedio que rondan los'
         ' 30 °C a lo largo del año.',
-      imagenUrl:
-      'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Colombia_-_Cesar_-_Tamalameque.svg/250px-Colombia_-_Cesar_-_Tamalameque.svg.png?utm_source=es.wikipedia.org&utm_campaign=parser&utm_content=thumbnail',
-),
-
+    imagenUrl:
+        'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Colombia_-_Cesar_-_Tamalameque.svg/250px-Colombia_-_Cesar_-_Tamalameque.svg.png?utm_source=es.wikipedia.org&utm_campaign=parser&utm_content=thumbnail',
+  ),
   SeccionInfo(
     titulo: 'Río Magdalena',
     icono: Icons.water,
@@ -68,8 +71,8 @@ const List<SeccionInfo> _seccionesDetalle = [
         'conectar el interior andino con el mundo exterior. Durante el siglo XIX y gran parte del XX, la navegación a vapor '
         'transformó sus riberas en prósperos centros de comercio, transporte de pasajeros y despacho de productos como el café '
         'y el tabaco a través de emblemáticos puertos como Honda, Barrancabermeja, El Banco, Tamalameque y Magangué.',
-      imagenUrl: 
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6w2ala51bq7OwpANipa5btbL6PB7HMwI48RV8ZT25hlizRxijbvX_6vb&s=10'
+    imagenUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6w2ala51bq7OwpANipa5btbL6PB7HMwI48RV8ZT25hlizRxijbvX_6vb&s=10',
   ),
   SeccionInfo(
     titulo: 'Fiestas y Cultura',
@@ -87,27 +90,24 @@ const List<SeccionInfo> _seccionesDetalle = [
         ' y del río Magdalena. Toda esta riqueza festiva se complementa a comienzos de año con los tradicionales carnavales —marcados por lecturas del bando,'
         ' comparsas y coronación de reinas— y con las parrandas decembrinas, donde las comunidades de la cabecera y'
         ' sus corregimientos celebran al ritmo de tamboras y música vallenata.',
-      imagenUrl: 
-      'https://radionacional-v3.s3.amazonaws.com/s3fs-public/styles/rnal_16_9_1024/public/node/article/field_image/TamalamequeAlcald%C3%ADa1.jpg.webp?itok=XcgVZgZJ'
+    imagenUrl:
+        'https://radionacional-v3.s3.amazonaws.com/s3fs-public/styles/rnal_16_9_1024/public/node/article/field_image/TamalamequeAlcald%C3%ADa1.jpg.webp?itok=XcgVZgZJ',
   ),
-
   SeccionInfo(
     titulo: 'Su gente ',
-    icono: Icons.people, 
+    icono: Icons.people,
     contenido:
-     'La gente de Tamalameque encarna la esencia cálida y alegre del habitante ribereño y "anfibio" del Caribe colombiano,'
-     ' destacándose por su amabilidad, hospitalidad y trato cercano hacia propios y visitantes.'
-     ' Su identidad está profundamente ligada al río Magdalena y a las ciénagas, lo que ha forjado en ellos una sólida '
-     'tradición oral llena de historias, mitos y anécdotas compartidas con orgullo, entre las que sobresale la leyenda'
-     ' de La Llorona. Además, poseen un espíritu marcadamente melómano y fiestero, sintiendo un amor visceral por la'
-     ' tambora, los bailes cantados y el folclor tradicional que celebran comunitariamente en cada festividad.'
-     ' Esta convivencia constante con las dinámicas del agua, la pesca y las labores del campo ha moldeado a una '
-     'población resiliente, trabajadora y adaptativa, con un arraigo entrañable por su tierra y sus costumbres ancestrales.',
-     
+        'La gente de Tamalameque encarna la esencia cálida y alegre del habitante ribereño y "anfibio" del Caribe colombiano,'
+        ' destacándose por su amabilidad, hospitalidad y trato cercano hacia propios y visitantes.'
+        ' Su identidad está profundamente ligada al río Magdalena y a las ciénagas, lo que ha forjado en ellos una sólida '
+        'tradición oral llena de historias, mitos y anécdotas compartidas con orgullo, entre las que sobresale la leyenda'
+        ' de La Llorona. Además, poseen un espíritu marcadamente melómano y fiestero, sintiendo un amor visceral por la'
+        ' tambora, los bailes cantados y el folclor tradicional que celebran comunitariamente en cada festividad.'
+        ' Esta convivencia constante con las dinámicas del agua, la pesca y las labores del campo ha moldeado a una '
+        'población resiliente, trabajadora y adaptativa, con un arraigo entrañable por su tierra y sus costumbres ancestrales.',
     imagenUrl:
-     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiBZxAwUN4BmJ1JgrEz2mogZYsc27cXyGLHQAsMpGaMTPQ0SUGu4GwLQv&s=10'
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiBZxAwUN4BmJ1JgrEz2mogZYsc27cXyGLHQAsMpGaMTPQ0SUGu4GwLQv&s=10',
   ),
-
 ];
 
 class TamalamequeHomePage extends StatelessWidget {
@@ -168,6 +168,13 @@ class TamalamequeHomePage extends StatelessWidget {
                 },
               ),
             ),
+            ListTile(
+              title: const Text('ADSO 299380 API'),
+              leading: const Icon(Icons.person_4),
+              onTap: () {
+                mostraradso().adanies(context);
+              },
+            ),
           ],
         ),
       ),
@@ -203,8 +210,6 @@ class TamalamequeHomePage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
             ),
-
-
             const SizedBox(height: 24),
             Card(
               elevation: 2,
@@ -240,21 +245,20 @@ class TamalamequeHomePage extends StatelessWidget {
                       'por el Río Magdalena y un epicentro del desarrollo del folclor de la Tambora en Colombia.',
                       style: TextStyle(fontSize: 15, height: 1.4),
                     ),
-
                     const SizedBox(height: 12),
-                    const Text('Era Precolombina y el Señorío de Tamalameque',
+                    const Text(
+                      'Era Precolombina y el Señorío de Tamalameque',
                       style: TextStyle(fontSize: 20, height: 3.4),
                     ),
                     const SizedBox(height: 12),
                     const Text(
                       'Antes de la llegada de los españoles, la región estaba habitada por la etnia Pacabuy'
-                       '(de la familia lingüística Caribe/Arawak). Esta zona formaba parte del Señorío de Tamalameque,'
-                       ' un importante cacicazgo que dominaba los complejos cenagosos de Zapatosa y las riberas del río Magdalena.'
-                       ' El nombre de la población proviene del gran cacique Tamalameque,'
-                       ' líder indígena que gobernaba este territorio a la llegada de los conquistadores.',
+                      '(de la familia lingüística Caribe/Arawak). Esta zona formaba parte del Señorío de Tamalameque,'
+                      ' un importante cacicazgo que dominaba los complejos cenagosos de Zapatosa y las riberas del río Magdalena.'
+                      ' El nombre de la población proviene del gran cacique Tamalameque,'
+                      ' líder indígena que gobernaba este territorio a la llegada de los conquistadores.',
                       style: TextStyle(fontSize: 15, height: 1.4),
                     ),
-
                     const SizedBox(height: 12),
                     const Text(
                       'Fundación y Periodo Colonial',
@@ -267,7 +271,6 @@ class TamalamequeHomePage extends StatelessWidget {
                       'Desplazamientos del asentamiento: Debido a inundaciones recurrentes, ataques indígenas y fiebres tropicales, la Villa cambió de ubicación geográfica en al menos tres ocasiones antes de asentarse definitivamente en su lugar actual.',
                       style: TextStyle(fontSize: 15, height: 1.4),
                     ),
-
                     const SizedBox(height: 12),
                     const Text(
                       'Independencia y Época Republicana',
@@ -280,7 +283,8 @@ class TamalamequeHomePage extends StatelessWidget {
                       'y realistas para el control de la navegación y el abastecimiento.'
                       'Con la consolidación de la República y la llegada de la navegación a vapor por el Magdalena a mediados del siglo XIX, '
                       'Tamalameque mantuvo su rol como puerto fluvial activo, conectando el comercio del sur del Magdalena Grande con la costa.'
-                      'En el siglo XX, la construcción de carreteras y la disminución del transporte fluvial redujeron su importancia como puerto,'
+                      'En el siglo XX, la construcción de carreteras y la disminución del transporte fluvial redujeron su importancia como puerto,',
+                      style: TextStyle(fontSize: 15, height: 1.4),
                     ),
                   ],
                 ),
@@ -330,7 +334,6 @@ class PaginaDetalle extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            // Si la sección incluye imagen (como el mapa de Ubicación), se muestra aquí:
             if (seccion.imagenUrl != null) ...[
               Center(
                 child: Container(
